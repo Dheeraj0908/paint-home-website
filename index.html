@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paint Home: Color Maze Puzzle — Official Game Website</title>
+  <meta name="description" content="Slide your sponge, paint vibrant 3D houses, and build your dream city! Enjoy 1,000 unique levels, 21 sponge skins, and 100% offline casual puzzle gameplay.">
+  <link rel="icon" type="image/png" href="assets/images/game_icon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Site Navigation -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <a href="index.html" class="nav-brand">
+          <img src="assets/images/game_icon.png" alt="Paint Home Icon" width="44" height="44">
+          <span>Paint Home</span>
+        </a>
+
+        <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          ☰
+        </button>
+
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#sponges" class="nav-link">Sponge Shop</a></li>
+          <li><a href="#city" class="nav-link">My City</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+          <li><a href="privacy-policy.html" class="nav-link">Privacy Policy</a></li>
+          <li><a href="terms.html" class="nav-link">Terms</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="get-the-game.html" class="btn btn-primary btn-sm">Get The Game</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="badge badge-primary">🎨 Casual 3D Color Puzzle</div>
+          <h1>Paint Every Wall. <span class="highlight">Build Your City.</span></h1>
+          <p>
+            Glide your sponge across blank walls, splash rich colors across isometric homes, and solve 
+            <strong>1,000 uniquely crafted maze puzzles</strong>. Complete each house to earn cash, unlock 21 stylish sponges, 
+            and expand your private 3D city!
+          </p>
+
+          <div class="hero-cta">
+            <a href="get-the-game.html" class="btn btn-primary btn-lg">
+              <span>🚀 Download on Google Play</span>
+            </a>
+            <a href="#features" class="btn btn-secondary btn-lg">
+              <span>Explore Features</span>
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <h4>1,000</h4>
+              <p>Unique Levels</p>
+            </div>
+            <div class="stat-item">
+              <h4>21</h4>
+              <p>Sponge Skins</p>
+            </div>
+            <div class="stat-item">
+              <h4>100%</h4>
+              <p>Offline Playable</p>
+            </div>
+            <div class="stat-item">
+              <h4>14×14</h4>
+              <p>City Grid</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <!-- Floating notification cards -->
+          <div class="hero-card-floating card-float-1">
+            <span style="font-size: 1.5rem;">🎉</span>
+            <div>
+              <strong style="font-size: 0.95rem; color: var(--accent-purple-dark); display: block;">Wall 100% Painted!</strong>
+              <span style="font-size: 0.8rem; color: var(--accent-green); font-weight: 700;">+78 Cash Earned</span>
+            </div>
+          </div>
+
+          <div class="hero-card-floating card-float-2">
+            <span style="font-size: 1.5rem;">⭐</span>
+            <div>
+              <strong style="font-size: 0.95rem; color: var(--accent-purple-dark); display: block;">Prism Deluxe Unlocked</strong>
+              <span style="font-size: 0.8rem; color: #c07800; font-weight: 700;">Custom Paint Trail</span>
+            </div>
+          </div>
+
+          <!-- Phone Mockup with gameplay preview -->
+          <div class="phone-mockup">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="phone-header-ui">
+                <span style="background: rgba(0,0,0,0.25); padding: 4px 10px; border-radius: 99px;">LEVEL 42</span>
+                <span class="phone-cash-pill">💰 1,450 CASH</span>
+              </div>
+
+              <div class="phone-house-preview">
+                <div style="font-size: 0.82rem; font-weight: 700; margin-bottom: 12px; letter-spacing: 0.05em;">WALL 1 / 2</div>
+                <div class="phone-wall-grid">
+                  <div class="phone-tile painted"></div>
+                  <div class="phone-tile painted"></div>
+                  <div class="phone-tile painted"></div>
+                  <div class="phone-tile painted"></div>
+                  
+                  <div class="phone-tile painted"></div>
+                  <div class="phone-tile prop-window"></div>
+                  <div class="phone-tile painted"></div>
+                  <div class="phone-tile"></div>
+                  
+                  <div class="phone-tile painted"></div>
+                  <div class="phone-tile sponge-pos"></div>
+                  <div class="phone-tile"></div>
+                  <div class="phone-tile"></div>
+                  
+                  <div class="phone-tile painted"></div>
+                  <div class="phone-tile painted"></div>
+                  <div class="phone-tile painted"></div>
+                  <div class="phone-tile"></div>
+                </div>
+              </div>
+
+              <div style="width: 100%;">
+                <div style="font-size: 0.8rem; color: #f0eaf7; margin-bottom: 8px;">Swipe Up, Down, Left, Right to glide</div>
+                <div style="height: 40px; background: #fa7268; border-radius: 99px; display: flex; align-items: center; justify-content: center; font-weight: 800; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+                  SWIPE TO PAINT
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge-purple">Game Highlights</div>
+        <h2>Why Players Love Paint Home</h2>
+        <p>Pure, satisfying casual puzzle solving engineered from the ground up for smooth 60fps native performance.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon icon-orange">🧩</div>
+          <h3>1,000 Unique Puzzles</h3>
+          <p>
+            No looping or repetitive levels. Every single house and wall features solver-verified geometry with zero impossible traps or dead ends.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon icon-cyan">✨</div>
+          <h3>Satisfying 3D Assembly</h3>
+          <p>
+            Paint all sides of a house, then watch it rotate and snap together into a vibrant, fully-rendered 3D architectural model with celebratory sunbursts.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon icon-purple">🏙️</div>
+          <h3>"My City" Grid Builder</h3>
+          <p>
+            Turn your puzzle victories into a thriving town. Place earned homes on a massive 14×14 city plot and upgrade them with your in-game cash.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon icon-green">🧽</div>
+          <h3>21 Custom Sponge Skins</h3>
+          <p>
+            Personalize your painting journey. Unlock sponges from Coral Foam and Honey Gold to Prism Deluxe, each applying its own custom wall paint color.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon icon-orange">💰</div>
+          <h3>Fair In-Game Economy</h3>
+          <p>
+            Earn 50 to 99 cash automatically on every level completion. Watch an optional rewarded ad to double your reward, or test-drive any sponge skin for free.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon icon-cyan">✈️</div>
+          <h3>100% Offline Friendly</h3>
+          <p>
+            No mandatory internet connection or account sign-in required. All progress, cash, and unlocked skins remain securely saved right on your device.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sponge Showcase Section -->
+  <section id="sponges" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge-gold">Cosmetic Workshop</div>
+        <h2>Unlock 21 Sponge Skins & Paint Colors</h2>
+        <p>Click on any sponge below to preview its custom paint color on the interactive preview above!</p>
+      </div>
+
+      <div class="sponges-showcase">
+        <div class="sponge-card" data-color="#fa7268">
+          <div class="sponge-img-wrap">
+            <span style="font-size: 2.2rem;">🧽</span>
+          </div>
+          <h4>Original Sponge</h4>
+          <span class="badge badge-green">Default • Free</span>
+        </div>
+
+        <div class="sponge-card" data-color="#fa9870">
+          <div class="sponge-img-wrap">
+            <img src="assets/images/sponges/01-preview.png" alt="Coral Foam Preview" onerror="this.src='assets/images/sponges/01.png'">
+          </div>
+          <h4>Coral Foam</h4>
+          <div class="sponge-price">💰 100 Cash</div>
+        </div>
+
+        <div class="sponge-card" data-color="#24c4cd">
+          <div class="sponge-img-wrap">
+            <img src="assets/images/sponges/02-preview.png" alt="Ocean Wave Preview" onerror="this.src='assets/images/sponges/02.png'">
+          </div>
+          <h4>Ocean Wave</h4>
+          <div class="sponge-price">💰 150 Cash</div>
+        </div>
+
+        <div class="sponge-card" data-color="#f4ad1d">
+          <div class="sponge-img-wrap">
+            <img src="assets/images/sponges/03-preview.png" alt="Honey Gold Preview" onerror="this.src='assets/images/sponges/03.png'">
+          </div>
+          <h4>Honey Gold</h4>
+          <div class="sponge-price">💰 200 Cash</div>
+        </div>
+
+        <div class="sponge-card" data-color="#f894a1">
+          <div class="sponge-img-wrap">
+            <img src="assets/images/sponges/04-preview.png" alt="Rose Quartz Preview" onerror="this.src='assets/images/sponges/04.png'">
+          </div>
+          <h4>Rose Quartz</h4>
+          <div class="sponge-price">💰 250 Cash</div>
+        </div>
+
+        <div class="sponge-card" data-color="#b3e5ab">
+          <div class="sponge-img-wrap">
+            <img src="assets/images/sponges/05-preview.png" alt="Mint Cloud Preview" onerror="this.src='assets/images/sponges/05.png'">
+          </div>
+          <h4>Mint Cloud</h4>
+          <div class="sponge-price">💰 300 Cash</div>
+        </div>
+
+        <div class="sponge-card" data-color="#0f5798">
+          <div class="sponge-img-wrap">
+            <img src="assets/images/sponges/06-preview.png" alt="Midnight Grid Preview" onerror="this.src='assets/images/sponges/06.png'">
+          </div>
+          <h4>Midnight Grid</h4>
+          <div class="sponge-price">💰 400 Cash</div>
+        </div>
+
+        <div class="sponge-card" data-color="#fa984e">
+          <div class="sponge-img-wrap">
+            <img src="assets/images/sponges/07-preview.png" alt="Sunset Mosaic Preview" onerror="this.src='assets/images/sponges/07.png'">
+          </div>
+          <h4>Sunset Mosaic</h4>
+          <div class="sponge-price">💰 500 Cash</div>
+        </div>
+
+        <div class="sponge-card" data-color="#c2a1f3">
+          <div class="sponge-img-wrap">
+            <img src="assets/images/sponges/08-preview.png" alt="Lavender Pearl Preview" onerror="this.src='assets/images/sponges/08.png'">
+          </div>
+          <h4>Lavender Pearl</h4>
+          <div class="sponge-price">💰 650 Cash</div>
+        </div>
+
+        <div class="sponge-card" data-color="#a8d008">
+          <div class="sponge-img-wrap">
+            <img src="assets/images/sponges/09-preview.png" alt="Lime Circuit Preview" onerror="this.src='assets/images/sponges/09.png'">
+          </div>
+          <h4>Lime Circuit</h4>
+          <div class="sponge-price">💰 800 Cash</div>
+        </div>
+
+        <div class="sponge-card" data-color="#94ccf4">
+          <div class="sponge-img-wrap">
+            <img src="assets/images/sponges/10-preview.png" alt="Arctic Ice Preview" onerror="this.src='assets/images/sponges/10.png'">
+          </div>
+          <h4>Arctic Ice</h4>
+          <div class="sponge-price">💰 950 Cash</div>
+        </div>
+
+        <div class="sponge-card" data-color="#eed03b">
+          <div class="sponge-img-wrap">
+            <img src="assets/images/sponges/20-preview.png" alt="Prism Deluxe Preview" onerror="this.src='assets/images/sponges/20.png'">
+          </div>
+          <h4>Prism Deluxe</h4>
+          <div class="sponge-price">💰 3,000 Cash</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- My City Section -->
+  <section id="city" class="section section-alt">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-visual">
+          <div style="background: #fff; border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 24px; box-shadow: var(--shadow-md); text-align: center; max-width: 420px; width: 100%;">
+            <div style="font-size: 4rem; margin-bottom: 12px;">🏡🏘️🏢</div>
+            <h3 style="margin-bottom: 8px;">14×14 Municipal Canvas</h3>
+            <p style="font-size: 0.95rem;">Every house you finish painting joins your inventory. Tap any empty plot to build, and spend 100 cash to upgrade its architecture!</p>
+            <div style="display: flex; justify-content: center; gap: 8px; margin-top: 16px;">
+              <span class="badge badge-purple">Base House</span>
+              <span class="badge badge-gold">Tier 1 Upgrade</span>
+              <span class="badge badge-green">Tier 2 Masterpiece</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-content">
+          <div class="badge badge-purple">Progressive City Building</div>
+          <h2>From Painted Walls to a Thriving Metropolis</h2>
+          <p>
+            Solving puzzles is only half the fun! In <strong>Paint Home</strong>, each completed level gives you a finished 3D house to place into your city. 
+          </p>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; margin: 8px 0;">
+            <li style="display: flex; align-items: center; gap: 10px; font-weight: 600;">
+              <span style="color: var(--accent-green); font-size: 1.2rem;">✔</span> <strong>Free Land Placement:</strong> Place any owned home without land purchase costs.
+            </li>
+            <li style="display: flex; align-items: center; gap: 10px; font-weight: 600;">
+              <span style="color: var(--accent-green); font-size: 1.2rem;">✔</span> <strong>Two Upgrade Tiers:</strong> Invest 100 cash per tier to elevate building roofs, windows, and gardens.
+            </li>
+            <li style="display: flex; align-items: center; gap: 10px; font-weight: 600;">
+              <span style="color: var(--accent-green); font-size: 1.2rem;">✔</span> <strong>Persistent City Save:</strong> Your city stays saved locally on your device permanently.
+            </li>
+          </ul>
+          <a href="get-the-game.html" class="btn btn-primary" style="align-self: flex-start; margin-top: 10px;">
+            Start Building Your City
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How to Play Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge-primary">Gameplay Guide</div>
+        <h2>How to Play</h2>
+        <p>Simple to learn, deliciously satisfying to master in just three quick steps.</p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-num">01</div>
+          <h3>Swipe to Slide</h3>
+          <p>
+            Swipe Up, Down, Left, or Right. Your sponge glides smoothly in a straight line until it hits an obstacle, window, bush, or outer edge.
+          </p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-num">02</div>
+          <h3>Cover Every Tile</h3>
+          <p>
+            Color all white brick tiles across every face of the house. Plan your path so no isolated spots remain unpainted.
+          </p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-num">03</div>
+          <h3>Collect & Expand</h3>
+          <p>
+            Finish the house to trigger celebratory light rays, collect your random 50–99 cash reward, and unlock the next home for your city!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge badge-purple">Got Questions?</div>
+        <h2>Frequently Asked Questions</h2>
+        <p>Everything you need to know about levels, cash, ads, and saved data.</p>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How many levels are in the game?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              There are <strong>1,000 unique levels</strong>! Levels 1 through 25 are classic handcrafted puzzles, while levels 26 through 1,000 are solver-verified procedural campaign levels. No puzzle repeats, and every level is guaranteed 100% solvable.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How does in-game cash work?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Each time you complete a house, you automatically receive a randomized reward between <strong>50 and 99 cash</strong>. You can optionally watch a rewarded video ad on the victory screen to double your earnings to 100–198 cash. Cash has no real-money value and is spent in the Sponge Shop or for City upgrades.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Can I play offline without an internet connection?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Yes! All 1,000 levels, the City builder, and the Sponge shop are fully playable offline. If you are offline, ads will simply be unavailable, but normal gameplay and progression continue seamlessly.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Where is my progress saved?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              All game progress (completed levels, cash balance, owned sponge skins, city buildings) is stored 100% locally on your device in private app storage. No personal data or accounts are sent to external game servers.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What happens if I skip a level?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              If you choose to skip a tricky level by watching a rewarded ad, you will advance to the next level immediately. However, skipped levels award 0 cash and no building for your city.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner Section -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-banner">
+        <h2>Ready to Paint Your First House?</h2>
+        <p>Download Paint Home today and experience the most relaxing color maze puzzle game on Android.</p>
+        <div class="btn-group">
+          <a href="get-the-game.html" class="btn btn-primary btn-lg">
+            <span>Get The Game Free</span>
+          </a>
+          <a href="privacy-policy.html" class="btn btn-secondary btn-lg">
+            <span>Privacy Policy</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+            <img src="assets/images/game_icon.png" alt="Paint Home Icon" width="36" height="36" style="border-radius: 8px;">
+            <h3>Paint Home</h3>
+          </div>
+          <p>
+            Color Maze Puzzle — A native, satisfying casual puzzle game featuring 1,000 unique levels and city building on Android.
+          </p>
+          <div style="margin-top: 14px; font-size: 0.85rem; color: #847796;">
+            Package: <code>com.painthome.kotlin</code> • Version 2.2
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#features">Game Features</a></li>
+            <li><a href="#sponges">Sponge Shop</a></li>
+            <li><a href="#city">My City</a></li>
+            <li><a href="get-the-game.html">Get The Game</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Legal & Safety</h4>
+          <ul class="footer-links">
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms & Conditions</a></li>
+            <li><a href="privacy-policy.html#coppa">COPPA / Child Safety</a></li>
+            <li><a href="privacy-policy.html#advertising">AdMob Disclosure</a></li>
+            <li><a href="privacy-policy.html#user-choices">Ad Privacy Choices</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Download</h4>
+          <ul class="footer-links">
+            <li><a href="get-the-game.html">Google Play Store</a></li>
+            <li><a href="get-the-game.html#specs">System Requirements</a></li>
+            <li><a href="get-the-game.html#changelog">Version 2.2 Notes</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span class="current-year">2026</span> Paint Home: Color Maze Puzzle. All rights reserved.
+        </div>
+        <div>
+          Google Play and the Google Play logo are trademarks of Google LLC.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
