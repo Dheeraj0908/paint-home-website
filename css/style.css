@@ -966,3 +966,48 @@ p {
   }
 }
 
+
+/* The hero uses the actual native game rather than an invented puzzle UI. */
+.phone-mockup.real-game-phone {width: min(330px, 82vw); height: auto; padding: 9px; border-radius: 32px; background: #433662; transform: rotate(3deg); margin: 24px 0 34px;}
+.real-game-phone .real-game-capture {width: 100%; height: auto; border-radius: 24px; display: block;}
+.real-game-phone .phone-notch {display: none;}
+.real-game-phone figcaption {position: absolute; bottom: -32px; left: 0; right: 0; text-align: center; color: #665185; font-size: .78rem; font-weight: 700; transform: rotate(-3deg);}
+.sponge-price {display: flex; align-items: center; justify-content: center; gap: 6px;}
+.sponge-price img {width: 24px; height: 20px; object-fit: contain;}
+.skin-trial {font-size: .76rem; color: #6c637a; display: block; margin-top: 6px;}
+.sponge-img-wrap img {object-fit: contain;}
+.hero-grid > * {min-width: 0;}
+.features-grid {grid-template-columns: repeat(auto-fit,minmax(min(100%,280px),1fr));}
+#city .hero-visual > div > div {flex-wrap: wrap;}
+#city .hero-content li {display: block !important;}
+a:focus-visible, button:focus-visible {outline: 3px solid #433662; outline-offset: 4px;}
+@media(max-width: 600px) {
+ .hero {padding: 32px 0 48px;}
+ .hero .hero-grid {display: flex; flex-direction: column;}
+ .hero .hero-content {display: contents;}
+ .hero .hero-content > .badge {order: 0; align-self: flex-start;}
+ .hero .hero-content > h1 {order: 1; margin-bottom: 0;}
+ .hero .hero-content > .hero-cta {order: 2; width: 100%; margin-top: 0;}
+ .hero .hero-visual {order: 3; width: 100%;}
+ .hero .hero-content > p {order: 4;}
+ .hero .hero-content > .hero-stats {order: 5; width: 100%;}
+ .hero .hero-grid {gap: 18px;}
+ .hero .hero-content {text-align: left;}
+ .hero h1 {font-size: clamp(2rem, 9vw, 3rem);}
+ .hero p {font-size: 1rem;}
+ .hero .hero-stats {display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 16px;}
+ .hero .hero-cta {display: grid; grid-template-columns: 1fr; gap: 10px;}
+ .hero .hero-cta .btn {width: 100%; min-height: 48px; padding: 12px 16px;}
+ .hero .hero-visual .hero-card-floating {display: none;}
+ .hero .hero-visual .real-game-phone {transform: none; width: min(310px, 84vw); border-radius: 30px; margin-top: 10px;}
+ .real-game-phone figcaption {transform: none;}
+ .sponges-showcase {grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px;}
+ .sponge-card {min-width: 0; padding: 14px 8px;}
+ .sponge-card h4 {overflow-wrap: anywhere;}
+ .legal-content {overflow-wrap: anywhere;}
+ .site-header .navbar {gap: 10px;}
+ .nav-actions .btn {padding: 8px 10px; font-size: .8rem;}
+ .download-card-main {padding: 24px 16px;}
+}
+@media(prefers-reduced-motion: reduce) {html {scroll-behavior: auto;} *, *::before, *::after {animation: none !important; transition: none !important;}}
+
