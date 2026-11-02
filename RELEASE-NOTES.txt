@@ -1,6 +1,6 @@
-Paint Home v2.4 — upload the entire website folder, including downloads/ and app-ads.txt, to the server root.
+Paint Home - Official Website & Legal Policies
+Play Store: https://play.google.com/store/apps/details?id=com.painthome.kotlin
 App-ads.txt: https://painthome.mounts.in/app-ads.txt
-Privacy: https://painthome.mounts.in/privacy-policy.html
-Support: dheeraj@mounts.in. Confirm the legal publisher identity before public launch. Hosting access logs/retention depend on server configuration. Link the actual store listing in AdMob and complete review and regional consent-message setup. The APK uses a development certificate; configure a publisher upload key for Play.
-
-
+Privacy Policy: https://painthome.mounts.in/privacy-policy.html
+Terms & Conditions: https://painthome.mounts.in/terms.html
+Support Contact: dheeraj@mounts.in
