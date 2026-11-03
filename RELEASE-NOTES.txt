@@ -1,4 +1,4 @@
-Paint Room - Official Website & Legal Policies
+Paint Home - Official Website & Legal Policies
 Play Store: https://play.google.com/store/apps/details?id=com.painthome.kotlin
 App-ads.txt: https://painthome.mounts.in/app-ads.txt
 Privacy Policy: https://painthome.mounts.in/privacy-policy.html
